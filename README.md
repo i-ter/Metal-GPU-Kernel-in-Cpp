@@ -1,8 +1,8 @@
-# Metal Performance Shaders (MPS) with C++ and Custom Kernel Demo
+# GPU Kernel programming from scratch using Metal and C++
 
 This project demonstrates how to:
 1.  Integrate Metal Performance Shaders (MPS) with C++.
-2.  Write and compile a custom Metal GPU kernel.
+2.  Write and compile a custom Metal GPU kernel, in this case matrix multiplication.
 
 ## Compilation
 
@@ -36,7 +36,9 @@ After successful compilation, you can run the executable:
 This will execute the MPS-based matrix multiplication and display the results. On my M3 Pro, the I get the following timings for 2048x2048 matrix multiplications:
 
 CPU Time: 21243.9 ms
+
 GPU (unoptimised) Time: 131.83 ms
+
 MPS Optimized GPU Time: 33.05 ms
 
 ## Notes
