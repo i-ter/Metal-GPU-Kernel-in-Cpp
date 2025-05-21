@@ -1,6 +1,6 @@
 # GPU Kernel programming from scratch using Metal and C++
 
-This project demonstrates how to:
+This project shows how to:
 1.  Integrate Metal Performance Shaders (MPS) with C++.
 2.  Write and compile a custom Metal GPU kernel, in this case matrix multiplication.
 
