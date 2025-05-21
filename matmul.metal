@@ -8,10 +8,10 @@ kernel void matmul(
     constant uint& M              [[ buffer(3) ]],
     constant uint& N              [[ buffer(4) ]],
     constant uint& K              [[ buffer(5) ]],
-    uint2 gid                     [[ thread_position_in_grid ]]
+    uint2 thread_id               [[ thread_position_in_grid ]]
 ) {
-    uint row = gid.x;
-    uint col = gid.y;
+    uint row = thread_id.x;
+    uint col = thread_id.y;
     if (row < M && col < N) {
         float sum = 0.0f;
         for (uint i = 0; i < K; ++i) {
